@@ -346,7 +346,7 @@ section{
     position: absolute;
     padding: absolute;
     width: 90px;
-    height: 90px;
+    height: 70px;
     border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
     display: block;
     box-shadow: var(--neon-box-shadow);
