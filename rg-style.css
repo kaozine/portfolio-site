@@ -12,7 +12,7 @@
 
 /* DECLARED VARIABLES */
 :root{
-    --text-color: #f5f5f5;
+    --text-color: black;
     --hover-color: #12f7ff;
     --bg-color: #171717;
     --secon-bg-color: #292e33;
@@ -126,4 +126,35 @@ header.sticky{
     border-radius: 3px;
     color: var(--secon-bg-color);
     display: none;
+}
+
+/* WORK IN PROGRESS */
+
+#content {
+    margin: 20px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#prototype-image {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#prototype-link {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#prototype-link:hover {
+    background-color: #2980b9;
 }
