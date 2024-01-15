@@ -92,70 +92,29 @@ header.sticky{
 /* NAVIGATION --------------------------------------------------------- */
 .navlist{
     display: flex;
-    cursor: pointer;
-    font-size: 18px;
-
 }
 
-.navlist a {
-    position: relative;
-    overflow: hidden;
-    color: #fff;
-    font-weight: 700;
+.navlist a{
+    color: var(--text-color);
+    font-weight: 500;
     padding: 10px 20px;
 }
 
-.navlist a::before, .navlist a::after {
-    content: attr(data-text);
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    padding: 10px 20px;
+.navlist a:hover{
+    color: var(--hover-color);
+    text-shadow: 0 0 10px rgba(18, 247, 255, 0.6),
+    0 0 20px rgba(18, 247, 255, 0.6),
+    0 0 30px rgba(18, 247, 255, 0.6),
+    0 0 40px rgba(18, 247, 255, 0.6),
+    0 0 70px rgba(18, 247, 255, 0.6),
+    0 0 80px rgba(18, 247, 255, 0.6),
+    0 0 100px rgba(18, 247, 255, 0.6),
+    0 0 150px rgba(18, 247, 255, 0.6);
 }
 
-.navlist a:hover::before {
-    animation: glitch 0.3s linear 6;
-    color: #e91e63;
-    z-index: -2;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* White glow effect on hover */
+.navlist a.active{
+    color: var(--hover-color);
 }
-
-.navlist a:hover::after {
-    animation: glitch 0.3s linear 6 reverse;
-    color: #2196f3;
-    z-index: -1;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* White glow effect on hover */
-}
-
-/* Modify the keyframes for glitch effect */
-@keyframes glitch {
-    0% {
-        top: 0;
-        left: 0;
-    }
-    20% {
-        top: -3px;
-        left: -3px;
-    }
-    40% {
-        top: 3px;
-        left: 3px;
-    }
-    60% {
-        top: -3px;
-        left: 3px;
-    }
-    80% {
-        top: 3px;
-        left: -3px;
-    }
-    100% {
-        top: 0;
-        left: 0;
-    }
-}
-
 
 /* MENU ICON */
 #menu-icon{
@@ -172,7 +131,7 @@ header.sticky{
 /* WORK IN PROGRESS */
 
 #content {
-    margin: 90px;
+    margin: 20px;
     padding: 40px;
     background-color: #fff;
     border-radius: 8px;
